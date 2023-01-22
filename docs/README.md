@@ -1,4 +1,4 @@
-# Black Hawks Scouting
+# INFO -- COPIED FROM BLACK HAWKS 2834
 
 ## Overview
 
