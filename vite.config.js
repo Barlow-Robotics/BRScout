@@ -19,7 +19,7 @@ export default defineConfig({
     VitePWA({
       includeAssets: ["assets/*", "icons/*"],
       manifest: {
-        name: "Barlow Robotics Scouting",
+        name: "Barlow Robotics",
         short_name: "Scouting",
         description: "template by 2834, revamped for 4572 !",
         theme_color: "#000000",

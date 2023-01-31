@@ -31,7 +31,14 @@ onErrorCaptured(e => {
 
 @font-face {
   font-family: MartelSans;
-  src: url("/fonts/Martel_Sans/MartelSans-Regular.ttf");
+  src: url("/fonts/Martel_Sans/MartelSans-Regular.ttf") format("truetype");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: MartelSans;
+  src: url("/fonts/Martel_Sans/MartelSans-Black.ttf") format("truetype");
+  font-weight: bold;
 }
 
 img {
@@ -43,6 +50,11 @@ body {
   font-family: MartelSans, Arial, Helvetica, sans-serif;
   background-color: var(--bg-color);
   margin: 0;
+  font-weight: normal;
+}
+
+h1 {
+  font-weight: bold;
 }
 
 button {
