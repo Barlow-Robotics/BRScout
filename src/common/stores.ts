@@ -48,7 +48,7 @@ export const useWidgetsStore = defineStore("widgets", () => {
     // Escape the header and list of records, then put them together into a blob for downloading
     const header = escape(data.header);
     const records = data.values.map(escape);
-    return URL.createObjectURL(new Blob([[header, ...records].join("\n")], { type: "text/csv" }));
+    return URL.createObjectURL(new Blob([[...records].join("\n")], { type: "text/csv" }));
   }
 
   // Adds a widget and its reactive value to a temporary array.
