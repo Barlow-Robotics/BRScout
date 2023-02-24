@@ -1,10 +1,11 @@
 <template>
   <h1> Barlow Robotics </h1>
-  <h2>Form Selection</h2>
+  <h2>Scouting Forms</h2>
   <ul v-if="list.length > 0" class="link-list">
     <li v-for="[i, name] of list.entries()" :key="i">
       <RouterLink :to="{ name: 'form', query: { name } }">{{ name }}</RouterLink>
     </li>
+    <a href="https://forms.gle/uQfcvyEHe5YXpvrC6">Pits</a>
   </ul>
   <p v-else>No configurations specified.</p>
   <h2>Tools</h2>

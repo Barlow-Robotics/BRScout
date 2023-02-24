@@ -57,6 +57,14 @@ h1 {
   font-weight: bold;
 }
 
+a {
+  text-decoration:none;
+}
+
+ul {
+    list-style-type: none;
+}
+
 button {
   background-color: var(--button-color);
   user-select: none;
