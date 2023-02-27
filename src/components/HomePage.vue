@@ -1,5 +1,5 @@
 <template>
-  <img src="assets/logo.png">
+  <img src="../../public/assets/logo.png">
   <h1 style="font-weight: normal; text-decoration: overline; font-size: 250%; margin: 0px; color: greenyellow"> barlow robotics </h1>
   <h2 style="font-weight: normal; color: greenyellow">scouting forms</h2>
   <ul v-if="list.length> 0" class="link-list">
