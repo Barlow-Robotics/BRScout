@@ -15,7 +15,7 @@
       <RouterLink :to="{ name: 'inspector' }">data inspector</RouterLink>
     </li>
   </ul>
-  <a href="https://github.com/FRC2834" style="color: lightslategrey; margin-top: 30px; font-size: 11px">this app was created using a template by blackhawks 2834</a>
+  <a href="https://github.com/FRC2834" style="color: lightslategrey; margin-top: 30px; margin-bottom: 20px; font-size: 11px">this app was created using a template by blackhawks 2834</a>
 </template>
 
 <script setup lang="ts">
