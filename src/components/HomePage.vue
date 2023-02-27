@@ -1,19 +1,21 @@
 <template>
-  <h1> Barlow Robotics </h1>
-  <h2>Scouting Forms</h2>
-  <ul v-if="list.length > 0" class="link-list">
+  <img src="assets/logo.png">
+  <h1 style="font-weight: normal; text-decoration: overline; font-size: 250%; margin: 0px; color: greenyellow"> barlow robotics </h1>
+  <h2 style="font-weight: normal; color: greenyellow">scouting forms</h2>
+  <ul v-if="list.length> 0" class="link-list">
     <li v-for="[i, name] of list.entries()" :key="i">
       <RouterLink :to="{ name: 'form', query: { name } }">{{ name }}</RouterLink>
     </li>
-    <a href="https://forms.gle/uQfcvyEHe5YXpvrC6">Pits</a>
+    <a href="https://forms.gle/uQfcvyEHe5YXpvrC6">pits</a>
   </ul>
   <p v-else>No configurations specified.</p>
-  <h2>Tools</h2>
+  <h2 style="font-weight: normal; color: greenyellow">tools</h2>
   <ul class="link-list">
     <li>
-      <RouterLink :to="{ name: 'inspector' }">Data Inspector</RouterLink>
+      <RouterLink :to="{ name: 'inspector' }">data inspector</RouterLink>
     </li>
   </ul>
+  <a href="https://github.com/FRC2834" style="color: lightslategrey; margin-top: 30px; font-size: 11px">this app was created using a template by blackhawks 2834</a>
 </template>
 
 <script setup lang="ts">
