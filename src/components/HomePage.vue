@@ -1,6 +1,6 @@
 <template>
-  <img src="../../public/assets/logo.png">
-  <h1 style="font-weight: normal; text-decoration: overline; font-size: 250%; margin: 0px; color: greenyellow"> barlow robotics </h1>
+  <img class="midImg" src="../../public/assets/logo.png">
+  <h1> barlow robotics </h1>
   <h2 style="font-weight: normal; color: greenyellow">scouting forms</h2>
   <ul v-if="list.length> 0" class="link-list">
     <li v-for="[i, name] of list.entries()" :key="i">
@@ -30,6 +30,24 @@ const textData = await fetchResult.text();
 const list = $ref(textData.split("\n").map(value => value.trim()).filter(value => value.length > 0));
 </script>
 
+<style>
+
+h1 {
+  font-weight: normal;
+  text-decoration: overline;
+  font-size: 250%;
+  margin: 0px;
+  color: greenyellow;
+}
+
+.midImg {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+</style>
+
 <style lang="postcss">
 .link-list {
   margin: 0;
@@ -38,4 +56,5 @@ const list = $ref(textData.split("\n").map(value => value.trim()).filter(value =
     margin: 6px 0;
   }
 }
+
 </style>
