@@ -1,4 +1,5 @@
 <template>
+  <RouterLink :to="{ name: 'home' }" style="margin-top: 15px; padding: 3px; border: solid white 1px;">Home</RouterLink>
   <FormPage title="Team Selection" ref="page">
     <FormGroup :label-type="LabelType.LabelTag" id="event-key-input" name="Event Key">
       <input id="event-key-input" type="text" v-model="eventKey" @keyup.enter="loadTBAData" />
