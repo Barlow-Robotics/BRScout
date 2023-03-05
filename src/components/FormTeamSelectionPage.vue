@@ -1,5 +1,5 @@
 <template>
-  <RouterLink :to="{ name: 'home' }" style="margin-top: 15px; padding: 3px; border: solid white 1px;">Home</RouterLink>
+  <RouterLink :to="{ name: 'home' }" style="font-weight: normal; color: greenyellow; margin-top: 15px; padding: 3px; border: solid greenyellow 3px; border-radius: 4px; background-color: #222222;">Home</RouterLink>
   <FormPage title="Team Selection" ref="page">
     <FormGroup :label-type="LabelType.LabelTag" id="event-key-input" name="Event Key">
       <input id="event-key-input" type="text" v-model="eventKey" @keyup.enter="loadTBAData" />
@@ -138,8 +138,8 @@ function updateStatus(msg: Ref<string>, saveVar: Ref<unknown>, { code, data }: T
 
 // Loads team and match data from the event key the user entered.
 function loadTBAData() {
-  tba.load(eventKey, "teams").then(value => updateStatus($$(teamsLoadStatus), $$(teams), value));
-  tba.load(eventKey, "matches").then(value => updateStatus($$(matchesLoadStatus), $$(matches), value));
+  tba.load("2022cthar", "teams").then(value => updateStatus($$(teamsLoadStatus), $$(teams), value));
+  tba.load("2022cthar", "matches").then(value => updateStatus($$(matchesLoadStatus), $$(matches), value));
 }
 </script>
 
@@ -148,4 +148,13 @@ function loadTBAData() {
   width: 250px;
   text-overflow: ellipsis;
 }
+
+input[type=checkbox] {
+  accent-color: greenyellow;
+}
+
+input[type=radio] {
+  accent-color: greenyellow;
+}
+
 </style>

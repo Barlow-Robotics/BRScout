@@ -29,4 +29,5 @@ config.name = name ?? "";
   grid-template-rows: 1fr auto;
   justify-items: center;
 }
+
 </style>

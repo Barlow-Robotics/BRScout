@@ -69,6 +69,11 @@ button {
   background-color: var(--button-color);
   user-select: none;
   cursor: pointer;
+  font-family: 'MartelSans';
+  border-radius: 5px;
+  background-color: #91d826;
+  color: #020202;
+  font-weight: bold;
 }
 
 input, select, textarea {
