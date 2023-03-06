@@ -18,7 +18,7 @@ import HomePage from "@/components/HomePage.vue";
   display: grid;
   justify-content: center;
   height: 100vh;
-  background-image: url("../../assets/matrix.gif");
+  background-image: url("../../public/assets/matrix.gif");
   background-repeat: repeat;
 }
 </style>
