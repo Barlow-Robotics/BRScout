@@ -151,6 +151,8 @@ function loadTBAData() {
 
 input[type=checkbox] {
   accent-color: greenyellow;
+  width: 20px;
+  height: 20px;
 }
 
 input[type=radio] {
