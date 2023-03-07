@@ -14,6 +14,7 @@
     <li>
       <RouterLink :to="{ name: 'inspector' }">data inspector</RouterLink>
     </li>
+    <a href="https://docs.google.com/spreadsheets/d/1_PW__91LF_RVu54R96Nv3QEjM69gSNrZ0f1spxHtRjI/edit?usp=sharing">master scouting spreadsheet</a>
   </ul>
   <a href="https://github.com/FRC2834" style="color: lightslategrey; margin-top: 30px; margin-bottom: 20px; font-size: 11px">this app was created using a template by blackhawks 2834</a>
 </template>
