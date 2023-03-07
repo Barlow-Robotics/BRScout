@@ -21,4 +21,8 @@ import HomePage from "@/components/HomePage.vue";
   background-image: url("../../public/assets/matrix.gif");
   background-repeat: repeat;
 }
+
+h2 {
+  margin: 0;
+}
 </style>
