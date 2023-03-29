@@ -1,6 +1,7 @@
 <template>
   <img class="midImg" src="../../public/assets/logo.png">
-  <h1> barlow robotics </h1>
+  <a href="https://4572.carrd.co" class="" style="font-weight: bold; color: rgb(34, 34, 34); height: 30px; text-align: center; width: 150px; padding: 3px; border: 3px solid greenyellow; border-radius: 4px; background-color: greenyellow;"> back to carrd </a>
+  <h1> barlow scouting </h1>
   <h2 style="font-weight: normal; color: greenyellow">scouting forms</h2>
   <ul v-if="list.length> 0" class="link-list">
     <li v-for="[i, name] of list.entries()" :key="i">
@@ -14,7 +15,7 @@
     <li>
       <RouterLink :to="{ name: 'inspector' }">data inspector</RouterLink>
     </li>
-    <a href="https://docs.google.com/spreadsheets/d/1_PW__91LF_RVu54R96Nv3QEjM69gSNrZ0f1spxHtRjI/edit?usp=sharing">master scouting spreadsheet</a>
+    <a href="https://docs.google.com/spreadsheets/d/1CdRKUrCnNSVzajfjJHTYlhZoNHxzkYtirOOcxN31pJE/edit?usp=sharing">master scouting spreadsheet</a>
   </ul>
   <a href="https://github.com/FRC2834" style="color: lightslategrey; margin-top: 30px; margin-bottom: 20px; font-size: 11px">this app was created using a template by blackhawks 2834</a>
 </template>
@@ -45,6 +46,12 @@ h1 {
   display: block;
   margin-left: auto;
   margin-right: auto;
+}
+
+a {
+  display: block;
+  margin-right: 0;
+  margin-left: auto;
 }
 
 </style>
