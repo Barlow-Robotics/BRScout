@@ -1,6 +1,6 @@
 <template>
   <img class="midImg" src="../../public/assets/logo.png">
-  <a href="https://4572.carrd.co" class="" style="font-weight: bold; color: rgb(34, 34, 34); height: 30px; text-align: center; width: 150px; padding: 3px; border: 3px solid greenyellow; border-radius: 4px; background-color: greenyellow;"> back to carrd </a>
+  <a class="carrd" href="https://4572.carrd.co" style="font-weight: bold; color: rgb(34, 34, 34); height: 30px; text-align: center; width: 150px; padding: 3px; border: 3px solid greenyellow; border-radius: 4px; background-color: greenyellow;"> back to carrd </a>
   <h1> barlow scouting </h1>
   <h2 style="font-weight: normal; color: greenyellow">scouting forms</h2>
   <ul v-if="list.length> 0" class="link-list">
@@ -48,7 +48,7 @@ h1 {
   margin-right: auto;
 }
 
-a {
+.carrd {
   display: block;
   margin-right: 0;
   margin-left: auto;
