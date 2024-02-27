@@ -138,8 +138,8 @@ function updateStatus(msg: Ref<string>, saveVar: Ref<unknown>, { code, data }: T
 
 // Loads team and match data from the event key the user entered.
 function loadTBAData() {
-  tba.load("2023cthar", "teams").then(value => updateStatus($$(teamsLoadStatus), $$(teams), value));
-  tba.load("2023cthar", "matches").then(value => updateStatus($$(matchesLoadStatus), $$(matches), value));
+  tba.load("2024cthart", "teams").then(value => updateStatus($$(teamsLoadStatus), $$(teams), value));
+  tba.load("2024cthart", "matches").then(value => updateStatus($$(matchesLoadStatus), $$(matches), value));
 }
 </script>
 
