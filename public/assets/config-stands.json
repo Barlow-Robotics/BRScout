@@ -10,23 +10,28 @@
           "file": "speaker.png",
           "height": 300,
           "col": 3,
+          "row": 2,
           "rowspan": 4
         },
         {
           "name": "Exit Community",
-          "type": "checkbox"
+          "type": "checkbox",
+          "row": 2,
+          "col": 1
         },
         {
           "name": "Speaker Scored",
           "type": "spinbox",
           "prefix": "Auto",
-          "row": 4,
+          "row": 3,
           "col": 1
         },
         {
           "name": "Amp Scored",
           "type": "spinbox",
-          "prefix": "Auto"
+          "prefix": "Auto",
+          "row": 4,
+          "col": 1
         },
         {
           "type": "spacer",
