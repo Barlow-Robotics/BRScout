@@ -6,16 +6,15 @@
       "name": "Autonomous",
       "widgets": [
         {
-          "name": "Exit Community",
-          "type": "checkbox"
-        },
-        {
           "type": "picture",
           "file": "speaker.png",
           "height": 300,
-          "row": 4,
-          "col": 4,
+          "col": 3,
           "rowspan": 4
+        },
+        {
+          "name": "Exit Community",
+          "type": "checkbox"
         },
         {
           "name": "Speaker Scored",
@@ -75,7 +74,7 @@
       "name": "Endgame",
       "widgets": [
         {
-          "name": "",
+          "name": "Stage",
           "type": "radio",
           "options": [
             "None",
