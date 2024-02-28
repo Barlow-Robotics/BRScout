@@ -11,42 +11,27 @@
         },
         {
           "type": "picture",
-          "file": "grid.png",
+          "file": "speaker.png",
           "height": 300,
           "row": 4,
           "col": 4,
           "rowspan": 4
         },
         {
-          "name": "Top Scored",
+          "name": "Speaker Scored",
           "type": "spinbox",
           "prefix": "Auto",
           "row": 4,
           "col": 1
         },
         {
-          "name": "Middle Scored",
-          "type": "spinbox",
-          "prefix": "Auto"
-        },
-        {
-          "name": "Bottom Scored",
+          "name": "Amp Scored",
           "type": "spinbox",
           "prefix": "Auto"
         },
         {
           "type": "spacer",
           "height": 20
-        },
-        {
-          "name": "Docked To Charging Station",
-          "type": "checkbox",
-          "labelColspan": 2
-        },
-        {
-          "name": "Charging Station Engaged",
-          "type": "checkbox",
-          "labelColspan": 2
         }
       ]
     },
@@ -55,24 +40,24 @@
       "widgets": [
         {
           "type": "picture",
-          "file": "grid.png",
+          "file": "speaker.png",
           "height": 300,
           "col": 3,
           "rowspan": 4
         },
         {
-          "name": "Top Scored",
+          "name": "Speaker Scored",
           "type": "spinbox",
           "row": 1,
           "col": 1
         },
         {
-          "name": "Middle Scored",
+          "name": "Amp Scored",
           "type": "spinbox"
         },
         {
-          "name": "Bottom Scored",
-          "type": "spinbox"
+          "name": "Used Coopertition?",
+          "type": "checkbox"
         },
         {
           "name": "Defense Rating",
@@ -90,15 +75,23 @@
       "name": "Endgame",
       "widgets": [
         {
-          "name": "Parking",
+          "name": "",
           "type": "radio",
           "options": [
-            "Docked & Engaged",
-            "Docked Only",
+            "None",
             "Parked",
-            "None"
+            "On Stage",
+            "On Stage & Note in Trap"
           ],
-          "default": 3
+          "default": 0
+        },
+        {
+          "name": "Harmony? (two bot climb)",
+          "type": "checkbox"
+        },
+        {
+          "name": "Spotlit? (note on mic)",
+          "type": "checkbox"
         },
         {
           "name": "Comments",
