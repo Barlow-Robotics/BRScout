@@ -32,7 +32,6 @@
 <script setup lang="ts">
 import FormGroup from "./FormGroup.vue";
 import FormPage from "./FormPage.vue";
-import { matchNumber } from "./FormDownloadPage.vue";
 import { get, isEmpty } from "lodash";
 import { getError, getTeamName, isFailed, TBAData } from "@/common/tba";
 import { LabelType } from "@/common/types";
@@ -57,6 +56,7 @@ const widgets = useWidgetsStore();
 
 let eventKey = $ref("");
 const matchLevel = $ref(0);
+const matchNumber = $ref(1);
 const selectedTeam = $ref(0);
 
 const teamsLoadStatus = $ref("");
