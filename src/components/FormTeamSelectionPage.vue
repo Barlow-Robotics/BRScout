@@ -32,10 +32,11 @@
 <script setup lang="ts">
 import FormGroup from "./FormGroup.vue";
 import FormPage from "./FormPage.vue";
+import { matchNumber } from "./FormDownloadPage.vue";
 import { get, isEmpty } from "lodash";
 import { getError, getTeamName, isFailed, TBAData } from "@/common/tba";
 import { LabelType } from "@/common/types";
-import { ref, Ref } from "vue";
+import { ref, Ref, onMounted } from "vue";
 import { useConfigStore, useTBAStore, useWidgetsStore } from "@/common/stores";
 
 interface Team {
@@ -44,7 +45,9 @@ interface Team {
   number: number;
   name: string;
 }
-
+onMounted(() => {
+    loadTBAData();
+});
 const page = ref<InstanceType<typeof FormPage>>();
 defineExpose(page);
 
@@ -54,7 +57,6 @@ const widgets = useWidgetsStore();
 
 let eventKey = $ref("");
 const matchLevel = $ref(0);
-const matchNumber = $ref(1);
 const selectedTeam = $ref(0);
 
 const teamsLoadStatus = $ref("");

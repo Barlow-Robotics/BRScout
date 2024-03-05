@@ -9,7 +9,7 @@
       </select>
       <button @click="deleteData">Delete</button>
       <button @click="downloadData">Download</button>
-      <button @click="clearData">Clear All</button>
+     <!-- <button @click="clearData">Clear All</button> -->
     </template>
   </div>
   <div class="table-container">
@@ -60,13 +60,13 @@ function downloadData() {
   downloadLink.click();
 }
 
-function clearData() {
+/** function clearData() {
   if (!confirm("Clear all saved entries in local storage permanently?")) return;
 
   widgets.savedData.clear();
   selectedIdx = 0; // Reset selected index
 }
-</script>
+</script> */
 
 <style>
 .table-container {

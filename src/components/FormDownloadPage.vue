@@ -29,7 +29,7 @@ import { useRouter } from "vue-router";
 
 const config = useConfigStore();
 const widgets = useWidgetsStore();
-
+var matchNumber = 1;
 const router = useRouter();
 
 const page = ref<InstanceType<typeof FormPage>>();
@@ -37,6 +37,7 @@ defineExpose(page);
 
 function clearForm() {
   widgets.save();
+  matchNumber += 1;
   router.go(0); // Reload the page
 }
 </script>
