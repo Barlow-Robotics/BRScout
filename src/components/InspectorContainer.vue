@@ -65,8 +65,8 @@ function downloadData() {
 
   widgets.savedData.clear();
   selectedIdx = 0; // Reset selected index
-}
-</script> */
+} */
+</script> 
 
 <style>
 .table-container {
