@@ -7,7 +7,7 @@
     <li v-for="[i, name] of list.entries()" :key="i">
       <RouterLink :to="{ name: 'form', query: { name } }">{{ name }}</RouterLink>
     </li>
-    <a href="https://forms.gle/SA31D4YVzyt54SENA">pits</a>
+    <a href="https://forms.gle/pHGVExPGwZE8e7faA">pits</a>
   </ul>
   <p v-else>No configurations specified.</p>
   <h2 style="font-weight: normal; color: greenyellow">tools</h2>
@@ -15,7 +15,7 @@
     <li>
       <RouterLink :to="{ name: 'inspector' }">data inspector</RouterLink>
     </li>
-    <a href="https://docs.google.com/spreadsheets/d/1S4osFx3zpgw2mRVIg87PxttMuGCKLsJKvQGDOHAVZLs/edit?usp=sharing">master scouting spreadsheet</a>
+    <a href="https://docs.google.com/spreadsheets/d/1BRy2aZgbKlZ82VXyL6PvVCB6vpPl7L67fAB7b0M1cQY/edit#gid=1199583892">master scouting spreadsheet</a>
   </ul>
   <a href="https://github.com/FRC2834" style="color: lightslategrey; margin-top: 30px; margin-bottom: 20px; font-size: 11px">this app was created using a template by blackhawks 2834</a>
 </template>
