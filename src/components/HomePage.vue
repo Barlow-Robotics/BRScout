@@ -7,7 +7,7 @@
     <li v-for="[i, name] of list.entries()" :key="i">
       <RouterLink :to="{ name: 'form', query: { name } }">{{ name }}</RouterLink>
     </li>
-    <a href="https://forms.gle/pHGVExPGwZE8e7faA">pits</a>
+    <a href="https://forms.gle/QDzhRaib9S9QX8FM8">pits</a>
   </ul>
   <p v-else>No configurations specified.</p>
   <h2 style="font-weight: normal; color: greenyellow">tools</h2>
