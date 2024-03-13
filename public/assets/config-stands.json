@@ -68,6 +68,10 @@
           "type": "spinbox"
         },
         {
+          "name": "Can shoot into speaker from distance?",
+          "type": "checkbox"
+        },
+        {
           "name": "Used Coopertition?",
           "type": "checkbox"
         },
