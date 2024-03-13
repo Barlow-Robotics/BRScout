@@ -60,8 +60,27 @@
           "type": "spinbox"
         },
         {
+          "name": "Speaker Missed",
+          "type": "spinbox"
+        },
+        {
+          "name": "Amp Missed",
+          "type": "spinbox"
+        },
+        {
           "name": "Used Coopertition?",
           "type": "checkbox"
+        },
+        {
+          "name": "Intaked from...",
+          "type": "dropdown",
+          "options": [
+            "Did not intake",
+            "Just Source",
+            "Just Floor",
+            "Inconsistent",
+            "Both"
+          ]
         },
         {
           "name": "Defense Rating",
